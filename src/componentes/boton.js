@@ -1,4 +1,5 @@
 import React from "react";
+import '../hojas-de-estilo/boton.css'
 
 function Boton(props){
   const esOperador = valor =>{
