@@ -7,7 +7,8 @@ function Boton(props){
   };
   return(
     <div
-      className={`boton-contenedor ${esOperador(props.children) ? 'operador': ''}`.trimEnd()}>
+      className={`boton-contenedor ${esOperador(props.children) ? 'operador': ''}`.trimEnd()}
+      onClick={() => props.manejarclick(props.children)}>
       {props.children}
     </div>
   );
